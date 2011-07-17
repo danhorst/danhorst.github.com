@@ -1,0 +1,8 @@
+markdown:  rdiscount
+pygments:  true
+permalink: none
+exclude:
+  - config.rb
+  - deploy
+  - README.mkd
+  - grid-image
