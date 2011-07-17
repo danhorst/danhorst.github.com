@@ -1,26 +1,4 @@
-/* Author: 
+/* Author: Dan Brubaker Horst
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
