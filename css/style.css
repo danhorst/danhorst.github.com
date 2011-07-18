@@ -69,7 +69,7 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
-body, select, input, textarea { color: #444; }
+body, select, input, textarea { color: #333; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
@@ -89,12 +89,19 @@ a:hover { color: #036; }
   font-style: normal;
 }
 
+body {background-color:#E5F0E7;}
+#container {background-color:#FFF; padding:3em 4em 1em; margin:1em auto; width:33em;}
+#main {min-height:10em;}
+
 h1, h2, h3 {font-family:"DayRomanRegular", "Georgia", serif; font-weight:normal;}
-h1 {font-size:394%;}
+h1 {font-size:340%; margin-bottom:.6em; text-align:center;}
 h2 {font-size:159.3%;}
 h3 {font-size:123.1%;}
-
-
+a {border-bottom:1px dotted #607890; text-decoration:none}
+a:hover {border-bottom:none;}
+footer {padding:2em; text-align:center;}
+footer li {display:inline; padding:.5em .3em;}
+footer li a {padding:.1em;}
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -136,4 +143,3 @@ h3 {font-size:123.1%;}
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-
