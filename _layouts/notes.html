@@ -1,0 +1,27 @@
+---
+layout: boilerplate
+---
+<div id="container">
+
+  <section>
+      <h1>{{ page.title }}</h1>
+    <article>
+      {{ content }}
+    </article>
+  </section>
+
+  <footer>
+    <p>Please direct any comments or questions to <a href="https://www.twitter.com/danhorst">@danhorst</a>.</p>
+    {% if page.filename %}
+    <p>
+      The content of this page is <a href="https://github.com/danhorst/danhorst.github.com/blob/master/_posts/{{ page.filename }}">available on github</a>.
+      <br />
+      Edits and <a href="http://help.github.com/send-pull-requests/">pull requests</a> are welcome.
+    </p>
+    {% endif %}
+    <nav>
+      <a href="/notes/">Return to Notes Listing</a>
+    </nav>
+  </footer>
+
+</div>

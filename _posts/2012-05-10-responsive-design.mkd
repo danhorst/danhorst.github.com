@@ -1,0 +1,37 @@
+---
+filename: 2012-05-10-responsive-design.mkd
+layout:   notes
+title:    Responsive Design Resources
+category: notes
+---
+
+ - _[Responsive Web Design][1]_ by [Ethan Marcotte][2] is a good introduction into this methodology.
+ - [@RWD][3] has frequent updates to all things related to responsive web design.
+ - [mediaqueri.es][4] is a gallery of responsive sites that illustrate how different approaches to presenting content at varying screen widths.
+ - [A Book Apart][5] is an extension of [A List A Part][6] that publishes small books related to the web. I have read several of their books. They are all good.
+ - I recommend _[Mobile First][7]_ by [Luke Wroblewski][8]. [His blog][9] is constant source of high-quality information.
+ - Luke Wroblewski wrote [an excellent summary][10] of what patterns the sites listed in [mediaqueri.es][4] use.
+ - [Brad Frost][11] summarized [common approaches to responsive navigation patterns][12].
+ - [Smashing Magazine][13] published [a sample chapter][14] from _[Mobile Design Pattern Gallery][15]_ by [Theresa Neil][16] on patterns for searching, sorting, and filtering in a mobile context
+   - The author recommends two additional titles:
+     - _[Search Patterns][17]_
+     - _[Designing Search; UX Strategies for eCommerce Success][18]_
+
+[1]:  http://www.abookapart.com/products/responsive-web-design
+[2]:  https://twitter.com/beep
+[3]:  https://twitter.com/rwd
+[5]:  http://www.abookapart.com
+[6]:  http://www.alistapart.com/
+[7]:  http://www.abookapart.com/products/mobile-first
+[8]:  http://www.lukew.com/
+[9]:  http://www.lukew.com/ff/
+[4]:  http://mediaqueri.es/
+[10]: http://www.lukew.com/ff/entry.asp?1514
+[11]: http://bradfrostweb.com/
+[12]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
+[13]: http://smashingmagazine.com/
+[14]: http://uxdesign.smashingmagazine.com/2012/04/10/ui-patterns-for-mobile-apps-search-sort-filter/
+[15]: http://www.mobiledesignpatterngallery.com/
+[16]: http://www.theresaneil.com/
+[17]: http://searchpatterns.org/
+[18]: http://www.scribd.com/doc/59490696/Designing-Search-UX-Strategies-for-eCommerce-Success

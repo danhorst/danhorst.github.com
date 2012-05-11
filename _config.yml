@@ -1,8 +1,11 @@
-markdown:    rdiscount
-pygments:    true
-permalink:   pretty
 server:      true
+auto:        true
 server_port: 4000
+
+pygments:    true
+markdown:    rdiscount
+permalink:   /:categories/:title/
+
 exclude:
   - config.rb
   - deploy

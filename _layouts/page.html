@@ -1,20 +1,16 @@
 ---
 layout: boilerplate
 ---
-  <div id="container">
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-    <div id="main">
-      {{ content }}
-    </div>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/cv/">CV</a></li>
-          <li><a href="/about/">About Me</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </div>
+<div id="container">
+
+  <section>
+    {{ content }}
+  </section>
+
+  <footer>
+    <nav>
+      <a href="{{site.baseurl}}/">Home</a>
+    </nav>
+  </footer>
+
+</div>

@@ -1,0 +1,12 @@
+---
+layout:   page
+title:    Notes &mdash; Dan Brubaker Horst
+category: notes
+---
+<h1>Notes</h1>
+
+<ul class="listing">
+  {% for post in site.categories.notes %}
+  <li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+  {% endfor %}
+</ul>
