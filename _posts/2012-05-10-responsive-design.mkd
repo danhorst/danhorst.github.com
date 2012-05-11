@@ -1,8 +1,8 @@
 ---
 filename: 2012-05-10-responsive-design.mkd
 layout:   notes
-title:    Responsive Design Resources
 category: notes
+title:    Responsive Design Resources
 ---
 
  - _[Responsive Web Design][1]_ by [Ethan Marcotte][2] is a good introduction into this methodology.
