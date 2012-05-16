@@ -7,6 +7,9 @@ title:    Notes &mdash; Dan Brubaker Horst
 
 <ul class="listing">
   {% for post in site.categories.notes %}
-  <li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+    <li itemscope itemtype="http://schema.org/Article">
+      <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
+      <time itemprop="datePublished">{{ post.date | date:"%Y-%m-%d" }}</time>
+    </li>
   {% endfor %}
 </ul>

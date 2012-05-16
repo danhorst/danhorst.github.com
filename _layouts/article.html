@@ -1,11 +1,15 @@
 ---
-layout: boilerplate
+layout:     boilerplate
+formatting: article
 ---
 <div id="container">
 
-  <section>
-      <h1>{{ page.title }}</h1>
-    <article>
+  <section itemscope itemtype="http://schema.org/Article">
+    <header>
+      <h1 itemprop="title" class="instapaper_ignore">{{ page.title }}</h1>
+      <time itemprop="datePublished">{{ page.date | date:"%Y-%m-%d" }}</time>
+    </header>
+    <article itemprop="articleBody" class="instapaper_body">
       {{ content }}
     </article>
   </section>
@@ -24,7 +28,7 @@ layout: boilerplate
     </p>
     {% endif %}
     <nav>
-      <a href="/notes/">Return to Notes Listing</a>
+      <a href="/notes/">Return to {{ page.categories | capitalize }} Listing</a>
     </nav>
   </footer>
 
