@@ -14,9 +14,8 @@ body {margin:0}
 ::-moz-selection {background:#fe57a1; color:#fff; text-shadow:none}
 ::selection {background:#fe57a1; color:#fff; text-shadow:none}
 
-a {border-bottom:1px dotted #F00; color:#F00; text-decoration:none}
-a:visited {color:#F00}
-a:hover {border-bottom:none; color:#F00}
+a {color:#F00}
+a:hover, a:visited {color:#F00}
 a:focus {outline:thin dotted}
 a:hover, a:active {outline:0}
 
@@ -80,9 +79,9 @@ td {vertical-align:top}
 h1,
 h2,
 h3 {font-weight:normal; margin:.375em 0 line-height:1.333}
-h1 {font-size:32px; font-size:3.2rem; margin-top:0}
+h1 {font-size:36px; font-size:3.6rem; margin-top:0}
 h2 {font-size:28px; font-size:2.8rem}
-h3 {font-size:24px; font-size:2.4rem}
+h3 {font-size:24px; font-size:2.4rem; text-transform:uppercase;}
 
 .listing a,
 h2 a,
@@ -91,15 +90,15 @@ h2 a:hover,
 .listing a:visited,
 h2 a:visited {color:#222}
 
-.listing a {border-bottom:1px solid #222}
-.listing a:hover {border-bottom:none}
-h2 a {border-bottom:2px solid #222}
+time {color:#888; display:block}
 
-hgroup {margin-bottom:4em}
-hgroup h1 {margin-bottom:0}
+hgroup,
+header {margin-bottom:4em}
+hgroup h1,
+header h1 {margin-bottom:0}
 hgroup h2 {font-size:24px; font-size:2.4rem; font-style:italic; margin-top:0}
 
-p, ul, pre, nav {font-size:24px; font-size:2.4rem; line-height:1.556}
+p, ul, pre, time, nav {font-size:24px; font-size:2.4rem; line-height:1.556}
 
 p {margin:0}
 article p {text-indent:0}
@@ -109,6 +108,8 @@ footer {border-top:1px solid #222; margin-top:1em; padding-top:1em}
 footer nav {text-align:center; margin-top:20px; margin-top:2rem}
 .index-page footer nav {margin-top:0}
 footer p+p {margin-top:.375em}
+
+.home section {margin-top:4em}
 
 /* =============================================================================
    Media Queries
@@ -123,15 +124,19 @@ footer p+p {margin-top:.375em}
 
 @media only screen and (min-width:48em) {
   #container {padding:8em 12em; margin:2em auto 4em}
-  hgroup {margin-bottom:8em}
   footer {margin-top:8em; padding-top:8em; text-align:center}
   footer nav {margin-top:80px; margin-top:8rem}
   footer p+p {margin-top:0}
-  p, ul, pre, nav {font-size:18px; font-size:1.8rem; line-height:1.556}
+  time {display:inline}
+  h3, p, ul, pre, time, nav {font-size:18px; font-size:1.8rem; line-height:1.556}
 }
 
 @media only screen and (max-width:60em) {
-  #container {margin-top:0;}
+  #container {margin-top:0}
+}
+
+@media only screen and (min-width:60em) {
+  #container {max-width:70em}
 }
 
 /* =============================================================================
