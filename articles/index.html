@@ -9,8 +9,11 @@ title:    Articles &mdash; Dan Brubaker Horst
   {% for post in site.categories.articles %}
     <li itemscope itemtype="http://schema.org/Article">
       <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-      <time itemprop="datePublished">({{ post.date | date:"%Y-%m-%d" }})</time>
+      {% if post.revised %}
+      <time itemprop="dateRevised">{{ post.revised | date:"%Y-%m-%d" }}</time>
+      {% else %}
+      <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
+      {% endif %}
     </li>
-  </div>
   {% endfor %}
 </ul>

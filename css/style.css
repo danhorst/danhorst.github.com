@@ -90,7 +90,9 @@ h2 a:hover,
 .listing a:visited,
 h2 a:visited {color:#222}
 
-time {color:#888; display:block}
+time, header p {color:#888}
+time {display:block}
+header p time {display:inline}
 
 hgroup,
 header {margin-bottom:4em}

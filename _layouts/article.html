@@ -7,7 +7,11 @@ formatting: article
   <section itemscope itemtype="http://schema.org/Article">
     <header>
       <h1 itemprop="title" class="instapaper_ignore">{{ page.title }}</h1>
-      <time itemprop="datePublished">{{ page.date | date:"%Y-%m-%d" }}</time>
+      {% if page.revised %}
+      <p><time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>, revised on <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time></p>
+      {% else %}
+      <p><time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time></p>
+      {% endif %}
     </header>
     <article itemprop="articleBody" class="instapaper_body">
       {{ content }}

@@ -15,9 +15,8 @@ category: home
       {% for post in site.categories.articles limit: 5 %}
       <li itemscope itemtype="http://schema.org/Article">
         <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-        <time itemprop="datePublished">({{ post.date | date:"%Y-%m-%d" }})</time>
+        <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
       </li>
-    </div>
     {% endfor %}
   </ul>
   <nav>
@@ -31,7 +30,11 @@ category: home
     {% for post in site.categories.notes limit: 5 %}
     <li itemscope itemtype="http://schema.org/Article">
       <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-      <time itemprop="datePublished">{{ post.date | date:"%Y-%m-%d" }}</time>
+      {% if post.revised %}
+      <time itemprop="dateRevised">{{ post.revised | date:"%Y-%m-%d" }}</time>
+      {% else %}
+      <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
