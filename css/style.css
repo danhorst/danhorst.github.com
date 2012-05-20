@@ -72,9 +72,20 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
+#banner {background-color:#222; padding:1.5em 0}
+#banner a {display:inline-block; margin-right:1em; text-decoration:none;
+  -webkit-transition: color 0.3s ease;
+     -moz-transition: color 0.3s ease;
+       -o-transition: color 0.3s ease;
+          transition: color 0.3s ease}
+#banner a,
+#banner a:visited {color:#FFF}
+#banner a:hover {color:#F00}
 
 #content {background-color:#EFEFEF; min-width:10em}
-#container {background-color:#FFF; padding:1em 1.5em; margin:0 auto; max-width:52em}
+#container {background-color:#FFF; padding:2em 3em}
+#container, footer section {margin:0 auto; max-width:52em}
+#banner nav {margin:0 auto; max-width:520px; max-width:52rem; padding:0 30px; padding:0 3rem}
 
 h1,
 h2,
@@ -94,8 +105,8 @@ time, header p {color:#888}
 time {display:block}
 header p time {display:inline}
 
-hgroup,
-header {margin-bottom:4em}
+section hgroup,
+section header {margin-bottom:4em}
 hgroup h1,
 header h1 {margin-bottom:0}
 hgroup h2 {font-size:24px; font-size:2.4rem; font-style:italic; margin-top:0}
@@ -106,39 +117,42 @@ p {margin:0}
 article p {text-indent:0}
 article p+p {text-indent:1em}
 
-footer {border-top:1px solid #222; margin-top:1em; padding-top:1em}
-footer nav {text-align:center; margin-top:20px; margin-top:2rem}
-.index-page footer nav {margin-top:0}
+footer {background-color:#222; color:#FFF; padding:2em 0}
+footer section {padding:0 3em}
 footer p+p {margin-top:.375em}
+footer nav {text-align:center; margin-top:20px; margin-top:2rem}
 
-.home section {margin-top:4em}
+.index-page #container {min-height:30em}
+.index-page footer nav {margin-top:0}
 
 /* =============================================================================
    Media Queries
    Author: Dan Brubaker Horst
    ========================================================================== */
 
-@media only screen and (min-width:20em) {
+@media only screen and (min-width:22em) {
+  #banner nav {padding:0 60px; padding:0 6rem}
   #container {padding:4em 6em}
-  footer {margin-top:4em; padding-top:4em}
+  footer {padding:4em 0}
+  footer section {padding:0 6em}
   footer nav {margin-top:40px; margin-top:4rem}
 }
 
 @media only screen and (min-width:48em) {
-  #container {padding:8em 12em; margin:2em auto 4em}
-  footer {margin-top:8em; padding-top:8em; text-align:center}
+  #banner nav {padding:0 120px; padding:0 12rem}
+  #container {padding:8em 12em}
+  footer {padding:8em 0}
+  footer section {padding:0 12em}
   footer nav {margin-top:80px; margin-top:8rem}
   footer p+p {margin-top:0}
   time {display:inline}
   h3, p, ul, pre, time, nav {font-size:18px; font-size:1.8rem; line-height:1.556}
 }
 
-@media only screen and (max-width:60em) {
-  #container {margin-top:0}
-}
-
 @media only screen and (min-width:60em) {
-  #container {max-width:70em}
+  #container, footer section {max-width:70em}
+  #banner nav {max-width:700px; max-width:70rem}
+  .index-page #container {min-height:40em}
 }
 
 /* =============================================================================

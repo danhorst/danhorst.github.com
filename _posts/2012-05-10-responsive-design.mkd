@@ -17,9 +17,9 @@ things&#8221;][4].
 ## Getting Started
 
 Concepts that require a degree of nuance are hard to learn from a blog post or
-two. [A Book Apart][9] is an extension of [A List A Part][10] that publishes
-small books related to the web. I have read several of their books. They are all
-good.
+two. [A List A Part][10] is a great place to start but when you are ready to dig
+a little deeper [A Book Apart][9] publishes small books on creating for the web.
+I have read several of their books. They are all good.
 
  - _[Responsive Web Design][5]_ by [the man himself][6] is a good introduction
    into this methodology.

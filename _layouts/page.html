@@ -1,16 +1,23 @@
 ---
-layout: boilerplate
+layout:   boilerplate
+category: index-page
 ---
-<div id="container" class="index-page">
+<header id="banner" role="banner">
+  <nav>
+    <a href="/articles">Articles</a>
+    <a href="/notes">Notes</a>
+    <a href="/about">About</a>
+  </nav>
+</header>
 
-  <section>
-    {{ content }}
-  </section>
+<section id="container">
 
-  <footer>
-    <nav>
-      <a href="{{site.baseurl}}/">Home</a>
-    </nav>
-  </footer>
+  {{ content }}
 
-</div>
+</section>
+
+<footer>
+  <nav>
+    <a href="{{site.baseurl}}/">Home</a>
+  </nav>
+</footer>

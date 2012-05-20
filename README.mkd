@@ -1,2 +1,3 @@
 This is the source for the site: [danhorst.github.com](http://danhorst.github.com).
+
 The site template is based on [html5-boilerplate](http://github.com/paulirish/html5-boilerplate).
