@@ -125,6 +125,9 @@ footer nav {text-align:center; margin-top:20px; margin-top:2rem}
 .index-page #container {min-height:30em}
 .index-page footer nav {margin-top:0}
 
+.generatedcontent ul li {list-style:none; position:relative;}
+.generatedcontent ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
+
 /* =============================================================================
    Media Queries
    Author: Dan Brubaker Horst
