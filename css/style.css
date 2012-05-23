@@ -7,7 +7,7 @@ audio, canvas, video {display:inline-block; *display:inline; *zoom:1}
 audio:not([controls]) {display:none}
 [hidden] {display:none}
 
-html {font-size:62.5%; -webkit-text-size-adjust:62.5%; -ms-text-size-adjust:62.5%}
+html {font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:1.5}
 html, button, input, select, textarea {font-family:Georgia,Times,serif; color:#222}
 body {margin:0}
 
@@ -72,7 +72,7 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
-#banner {background-color:#222; padding:1.5em 0}
+#banner {background-color:#222; padding:.5em 0}
 #banner a {display:inline-block; margin-right:1em; text-decoration:none;
   -webkit-transition: color 0.3s ease;
      -moz-transition: color 0.3s ease;
@@ -83,16 +83,16 @@ td {vertical-align:top}
 #banner a:hover {color:#F00}
 
 #content {background-color:#EFEFEF; min-width:10em}
-#container {background-color:#FFF; padding:2em 3em}
+#container {background-color:#FFF; padding:1em 1.5em}
 #container, footer section {margin:0 auto; max-width:52em}
-#banner nav {margin:0 auto; max-width:520px; max-width:52rem; padding:0 30px; padding:0 3rem}
+#banner nav {margin:0 auto; max-width:29em; padding:0 1.5em}
 
 h1,
 h2,
 h3 {font-weight:normal; margin:.375em 0 line-height:1.333}
-h1 {font-size:36px; font-size:3.6rem; margin-top:0}
-h2 {font-size:28px; font-size:2.8rem}
-h3 {font-size:24px; font-size:2.4rem; text-transform:uppercase}
+h1 {font-size:1.625; margin-top:0}           /* 26px */
+h2 {font-size:1.25em}                        /* 20px */
+h3 {font-size:1em; text-transform:uppercase} /* 16px */
 
 .listing a,
 h2 a,
@@ -106,24 +106,23 @@ time {display:block}
 header p time {display:inline}
 
 section hgroup,
-section header {margin-bottom:4em}
+section header {margin-bottom:2em}
 hgroup h1,
 header h1 {margin-bottom:0}
-hgroup h2 {font-size:24px; font-size:2.4rem; font-style:italic; margin-top:0}
-
-p, ul, pre, time, nav {font-size:24px; font-size:2.4rem; line-height:1.556}
+hgroup h2 {font-size:1.125em; font-style:italic; margin-top:0}
 
 p {margin:0}
 article p {text-indent:0}
 article p+p {text-indent:1em}
 
-footer {background-color:#222; color:#FFF; padding:2em 0}
-footer section {padding:0 3em}
+footer {background-color:#222; color:#FFF; padding:1em 0}
+footer section {padding:0 1.5em}
 footer p+p {margin-top:.375em}
-footer nav {text-align:center; margin-top:20px; margin-top:2rem}
+footer nav {text-align:center; margin-top:1em}
 
-.index-page #container {min-height:30em}
+.index-page #container {min-height:22em}
 .index-page footer nav {margin-top:0}
+.home #container h3 {margin-top:2em}
 
 .generatedcontent ul li {list-style:none; position:relative;}
 .generatedcontent ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
@@ -133,29 +132,37 @@ footer nav {text-align:center; margin-top:20px; margin-top:2rem}
    Author: Dan Brubaker Horst
    ========================================================================== */
 
-@media only screen and (min-width:22em) {
-  #banner nav {padding:0 60px; padding:0 6rem}
-  #container {padding:4em 6em}
-  footer {padding:4em 0}
-  footer section {padding:0 6em}
-  footer nav {margin-top:40px; margin-top:4rem}
+/* NOTE: media queries sized with "em" use the root font size (typically 16px) */
+
+/* Phone landscape */
+@media only screen and (min-width:20.5em) { /* > 320 */
+  #banner nav {padding:0 3em}
+  #container {padding:2em 3em}
+  footer {padding:2em 0}
+  footer section {padding:0 3em}
+  footer nav {margin-top:2em}
 }
 
-@media only screen and (min-width:48em) {
-  #banner nav {padding:0 120px; padding:0 12rem}
-  #container {padding:8em 12em}
-  footer {padding:8em 0}
-  footer section {padding:0 12em}
-  footer nav {margin-top:80px; margin-top:8rem}
+/* Tablet portrait */
+@media only screen and (min-width:30.5em) { /* > 480 */
+  html {font-size:137.5%; -webkit-text-size-adjust:137.5%; -ms-text-size-adjust:137.5%} /* move base size from 16px to 22px */
+  #container {padding:2em 3em}
+  #banner nav {padding:0 3em}
+  footer {padding:4em 0}
+  footer section {padding:0 3em}
+  footer nav {margin-top:2em}
   footer p+p {margin-top:0}
   time {display:inline}
-  h3, p, ul, pre, time, nav {font-size:18px; font-size:1.8rem; line-height:1.556}
 }
 
-@media only screen and (min-width:60em) {
-  #container, footer section {max-width:70em}
-  #banner nav {max-width:700px; max-width:70rem}
-  .index-page #container {min-height:40em}
+/* Tablet landscape */
+@media only screen and (min-width:48.5em) { /* > 768 */
+  #container, footer section {max-width:40em}
+  #container {padding:4em 6em}
+  #banner nav {padding:0 108px; padding:0 6em}
+  footer nav {margin-top:4em}
+  #banner nav {max-width:40em}
+  .index-page #container {min-height:20em}
 }
 
 /* =============================================================================
