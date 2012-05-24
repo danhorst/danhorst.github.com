@@ -85,12 +85,12 @@ td {vertical-align:top}
 #content {background-color:#EFEFEF; min-width:10em}
 #container {background-color:#FFF; padding:1em 1.5em}
 #container, footer section {margin:0 auto; max-width:52em}
-#banner nav {margin:0 auto; max-width:29em; padding:0 1.5em}
+#banner nav {margin:0 auto; max-width:52em; padding:0 1.5em}
 
 h1,
 h2,
 h3 {font-weight:normal; margin:.375em 0 line-height:1.333}
-h1 {font-size:1.625; margin-top:0}           /* 26px */
+h1 {font-size:1.625em; margin-top:0}         /* 26px */
 h2 {font-size:1.25em}                        /* 20px */
 h3 {font-size:1em; text-transform:uppercase} /* 16px */
 
@@ -146,6 +146,9 @@ footer nav {text-align:center; margin-top:1em}
 /* Tablet portrait */
 @media only screen and (min-width:30.5em) { /* > 480 */
   html {font-size:112.5%; -webkit-text-size-adjust:112.5%; -ms-text-size-adjust:112.5%} /* move base size from 16px to 18px */
+  h1 {font-size:1.5556em}        /* 28px */
+  h2 {font-size:1.2222em}        /* 22px */
+  hgroup h2 {font-size:1.2222em} /* 22px */
   #container {padding:2em 3em}
   #banner nav {padding:0 3em}
   footer {padding:4em 0}
@@ -168,6 +171,9 @@ footer nav {text-align:center; margin-top:1em}
 /* Large Screen */
 @media only screen and (min-width:64.5em) { /* > 1024 */
   html {font-size:137.5%; -webkit-text-size-adjust:137.5%; -ms-text-size-adjust:137.5%} /* move base size from 16px to 22px */
+  h1 {font-size:2.25em}          /* 36px */
+  h2 {font-size:1.1818em}        /* 26px */
+  hgroup h2 {font-size:1.1818em} /* 26px */
 }
 
 /* =============================================================================
