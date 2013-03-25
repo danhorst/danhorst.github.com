@@ -10,14 +10,19 @@ formatting: article
   </nav>
 </header>
 
-<section id="container" itemscope itemtype="http://schema.org/Article">
+<section id="container" role="main" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 itemprop="title" class="instapaper_ignore">{{ page.title }}</h1>
+    <p class="subtle">
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://dan.brubaker.horst/about/"><span itemprop="name">Dan Brubaker Horst</span></a>
+    </span> &mdash;
     {% if page.revised %}
-    <p><time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>, revised on <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time></p>
+    <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>, revised on <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time>
     {% else %}
-    <p><time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time></p>
+    <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>
     {% endif %}
+    </p>
   </header>
   <article itemprop="articleBody" class="instapaper_body">
     {{ content }}
