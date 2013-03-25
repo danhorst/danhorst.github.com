@@ -12,12 +12,16 @@ category: home
 <section>
     <h3>Recent Articles</h3>
     <ul class="articles listing">
-      {% for post in site.categories.articles limit: 5 %}
-      <li itemscope itemtype="http://schema.org/Article">
-        <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-        <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
+    {% for post in site.categories.articles limit: 5 %}
+      <li itemscope itemtype="http://schema.org/BlogPosting">
+        <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
+      {% if post.revised %}
+        <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
+      {% else %}
+        <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+      {% endif %}
       </li>
-    {% endfor %}
+  {% endfor %}
   </ul>
   <nav>
     <a href="/articles">All Articles</a>
@@ -27,16 +31,16 @@ category: home
 <section>
   <h3>Recent Notes</h3>
   <ul class="notes listing">
-    {% for post in site.categories.notes limit: 5 %}
-    <li itemscope itemtype="http://schema.org/Article">
-      <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-      {% if post.revised %}
-      <time itemprop="dateRevised">{{ post.revised | date:"%Y-%m-%d" }}</time>
-      {% else %}
-      <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
-      {% endif %}
+  {% for post in site.categories.notes limit: 5 %}
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
+    {% if post.revised %}
+      <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
+    {% else %}
+      <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    {% endif %}
     </li>
-    {% endfor %}
+  {% endfor %}
   </ul>
   <nav>
     <a href="/notes">All Notes</a>

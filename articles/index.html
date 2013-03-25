@@ -6,14 +6,14 @@ title:    Articles &mdash; Dan Brubaker Horst
 <h1>Articles</h1>
 
 <ul class="articles listing">
-  {% for post in site.categories.articles %}
-    <li itemscope itemtype="http://schema.org/Article">
-      <a itemprop="name" href="{{ post.url }}">{{post.title }}</a>
-      {% if post.revised %}
-      <time itemprop="dateRevised">{{ post.revised | date:"%Y-%m-%d" }}</time>
-      {% else %}
-      <time itemprop="dateCreated">{{ post.date | date:"%Y-%m-%d" }}</time>
-      {% endif %}
-    </li>
-  {% endfor %}
+{% for post in site.categories.articles %}
+  <li itemscope itemtype="http://schema.org/BlogPosting">
+    <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
+  {% if post.revised %}
+    <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
+  {% else %}
+    <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+  {% endif %}
+  </li>
+{% endfor %}
 </ul>
