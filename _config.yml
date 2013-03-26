@@ -1,10 +1,12 @@
 server:      true
 auto:        true
 server_port: 4000
-
-pygments:    true
-markdown:    rdiscount
+pygments:    false
 permalink:   /:categories/:title/
+
+markdown:    rdiscount
+rdiscount:
+  extensions: [smart]
 
 exclude:
   - config.rb
