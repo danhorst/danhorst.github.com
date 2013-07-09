@@ -5,44 +5,6 @@ category: home
 ---
 
 <hgroup>
-  <h1>Dan Brubaker Horst</h1>
+  <h1><a href="http://dan.brubakerhorst.com">Dan Brubaker Horst</a></h1>
   <h2>I make things for the web</h2>
 </hgroup>
-
-<section>
-    <h3>Recent Articles</h3>
-    <ul class="articles listing">
-    {% for post in site.categories.articles limit: 5 %}
-      <li itemscope itemtype="http://schema.org/BlogPosting">
-        <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
-      {% if post.revised %}
-        <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
-      {% else %}
-        <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      {% endif %}
-      </li>
-  {% endfor %}
-  </ul>
-  <nav>
-    <a href="/articles">All Articles</a>
-  </nav>
-</section>
-
-<section>
-  <h3>Recent Notes</h3>
-  <ul class="notes listing">
-  {% for post in site.categories.notes limit: 5 %}
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
-    {% if post.revised %}
-      <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
-    {% else %}
-      <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-  <nav>
-    <a href="/notes">All Notes</a>
-  </nav>
-</section>

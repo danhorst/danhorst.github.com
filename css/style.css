@@ -82,8 +82,8 @@ td {vertical-align:top}
 #banner a:visited {color:#FFF}
 #banner a:hover {color:#F00}
 
-#content {background-color:#EFEFEF; min-width:10em}
-#container {background-color:#FFF; padding:1em 1.5em}
+#content {min-width:10em}
+#container {padding:1em 1.5em}
 #container, footer section {margin:0 auto; max-width:52em}
 #banner nav {margin:0 auto; max-width:52em; padding:0 1.5em}
 
