@@ -4,10 +4,6 @@ server_port: 4000
 pygments:    false
 permalink:   /:categories/:title/
 
-markdown:    rdiscount
-rdiscount:
-  extensions: [smart]
-
 exclude:
   - config.rb
   - deploy
