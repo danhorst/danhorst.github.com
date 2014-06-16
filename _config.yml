@@ -1,5 +1,7 @@
-pygments:    false
-permalink:   /:categories/:title/
+pygments:  false
+permalink: /:categories/:title/
+markdown:  kramdown
+url:       http://danhorst.github.io
 
 exclude:
   - config.rb

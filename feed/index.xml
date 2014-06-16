@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>I Make Web Things</title>
-  <link href="http://danhorst.github.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://danhorst.github.com/atom.xml"/>
+  <link href="{{ site.url }}/"/>
+  <link type="application/atom+xml" rel="self" href="{{ site.url }}/feed/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://danhorst.github.com/</id>
+  <id>{{ site.url }}</id>
   <author>
     <name>Dan Brubaker Horst</name>
     <email>dan.brubaker.horst@gmail.com</email>
@@ -17,13 +17,13 @@ layout: nil
   {% for post in site.posts %}
   <entry>
     <id>http://danhorst.github.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://danhorst.github.com{{ post.url }}"/>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Dan Brubaker Horst</name>
-      <uri>http://danhorst.github.com/</uri>
+      <uri>{{ site.url }}/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
