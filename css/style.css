@@ -124,8 +124,8 @@ footer nav {text-align:center; margin-top:1em}
 .index-page footer nav {margin-top:0}
 .home #container h3 {margin-top:2em}
 
-.generatedcontent ul li {list-style:none; position:relative;}
-.generatedcontent ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
+ul li {list-style:none; position:relative;}
+ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
 
 /* =============================================================================
    Media Queries

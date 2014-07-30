@@ -1,3 +1,0 @@
-/* Author: Dan Brubaker Horst
-
-*/
