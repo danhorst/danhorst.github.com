@@ -2,9 +2,9 @@ pygments:  false
 permalink: /:categories/:title/
 markdown:  kramdown
 url:       http://danhorst.github.io
+ga_token:  UA-28083204-3
 
 exclude:
-  - config.rb
-  - deploy
-  - README.mkd
-  - grid-image
+  - Gemfile
+  - Gemfile.lock
+  - README.md
