@@ -18,7 +18,7 @@ formatting: article
       <a itemprop="url" href="http://dan.brubakerhorst.com/about/"><span itemprop="name">Dan Brubaker Horst</span></a>
     </span> &mdash;
     {% if page.revised %}
-    <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>, revised on <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time>
+    <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>,  last updated <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time>
     {% else %}
     <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>
     {% endif %}
