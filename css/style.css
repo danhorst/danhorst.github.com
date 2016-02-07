@@ -121,6 +121,7 @@ hgroup h2 {font-size:1.125em; font-family:vollkornitalic; margin-top:0}
 
 p {margin:0}
 article p {margin-bottom:1em}
+p code {font-size:.75em; padding:0 .3em}
 
 footer {padding-bottom:1em}
 article hr, footer hr {border-bottom:1px solid #222; display:block; height:0; margin:2em auto; width:6em;}
