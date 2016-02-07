@@ -1,5 +1,5 @@
 ---
-filename: 2012-05-14-stage-all-deleted-files-in-a-git-repository.mkd
+filename: 2012-05-14-stage-all-deleted-files-in-a-git-repository.md
 layout:   article
 category: articles
 title:    Stage All Deleted Files In A Git Repository

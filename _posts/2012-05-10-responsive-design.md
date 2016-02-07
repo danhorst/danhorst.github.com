@@ -1,5 +1,5 @@
 ---
-filename: 2012-05-10-responsive-design.mkd
+filename: 2012-05-10-responsive-design.md
 revised:  2012-05-24
 layout:   article
 category: notes
