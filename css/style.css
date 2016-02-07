@@ -53,8 +53,31 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
-html {color:#222; font-family:Vollkorn,Georgia,Times,serif; padding-bottom:2em}
-h1, h2, h3, nav a {font-family:Montserrat,Helvetica,Arial,sans-serif}
+@font-face {
+  font-family: 'montserratregular';
+  src: url('/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornitalic';
+  src: url('/fonts/vollkorn/vollkorn-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornregular';
+  src: url('/fonts/vollkorn/vollkorn-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {color:#222; font-family:vollkornregular,Georgia,Times,serif; padding-bottom:2em}
+em, i {font-family:vollkornitalic}
+h1, h2, h3, nav a {font-family:montserratregular,Helvetica,Arial,sans-serif}
+
 body {padding:1em}
 
 h1,
@@ -89,7 +112,7 @@ section hgroup,
 section header {margin-bottom:1em}
 hgroup h1,
 header h1 {margin-bottom:0}
-hgroup h2 {font-size:1.125em; font-style:italic; font-weight:normal; margin-top:0}
+hgroup h2 {font-size:1.125em; font-family:vollkornitalic; margin-top:0}
 
 p {margin:0}
 article p {margin-bottom:1em}
