@@ -8,7 +8,6 @@ audio:not([controls]) {display:none}
 [hidden] {display:none}
 
 html {font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:1.6}
-html, button, input, select, textarea {font-family:Vollkorn,Georgia,Times,serif; color:#222}
 body {margin:0}
 
 ::-moz-selection {background:#fe57a1; color:#fff; text-shadow:none}
@@ -54,9 +53,19 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
+html {color:#222; font-family:Vollkorn,Georgia,Times,serif; padding-bottom:2em}
+h1, h2, h3, nav a {font-family:Montserrat,Helvetica,Arial,sans-serif}
 body {padding:1em}
 
-nav a {display:inline-block; letter-spacing:.1em; text-decoration:none; text-transform:uppercase; transition: color 0.3s ease}
+h1,
+h2,
+h3 {font-weight:normal; margin:.375em 0}
+h1 {font-size:1.5em; margin-top:0} /* 24px */
+h2 {font-size:1em} /* 16px */
+h3, nav a {font-size:.75em; letter-spacing:.1em; text-transform:uppercase} /* 12px */
+h3 {line-height:2}
+
+nav a {display:inline-block; text-decoration:none; transition: color 0.3s ease}
 nav a,
 nav a:visited {color:#222}
 nav a:hover {color:#F00}
@@ -66,13 +75,6 @@ header nav a {margin-right:1em}
 #banner nav, #container, footer section {margin:0 auto; max-width:36em}
 #banner nav {padding-bottom:1em}
 
-h1,
-h2,
-h3 {font-weight:normal; margin:.375em 0}
-h1 {font-size:1.25em; font-weight:bold; margin-top:0} /* 20px */
-h2 {font-size:1em; font-weight:bold}                  /* 16px */
-h3 {font-size:1em; font-style:italic}                 /* 16px */
-
 .listing a,
 h2 a,
 .listing a:hover,
@@ -81,10 +83,10 @@ h2 a:hover,
 h2 a:visited {color:#222}
 
 time {display:block}
-header p time {display:inline}
+header p time {display:inline; white-space:nowrap;}
 
 section hgroup,
-section header {margin-bottom:2em}
+section header {margin-bottom:1em}
 hgroup h1,
 header h1 {margin-bottom:0}
 hgroup h2 {font-size:1.125em; font-style:italic; font-weight:normal; margin-top:0}
@@ -94,9 +96,8 @@ article p {margin-bottom:1em}
 
 footer {padding-bottom:1em}
 footer hr {border-bottom:1px solid #222; display:block; height:0; margin:2em auto 1.7em; width:6em;}
-footer section {padding:0 1.5em}
 footer p+p {margin-top:.375em}
-footer nav {text-align:center; margin-top:1em}
+footer nav {text-align:center; margin-top:1.5em}
 
 .index-page #container {min-height:22em}
 .index-page footer nav {margin-top:0}
@@ -121,6 +122,7 @@ ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
   html {font-size:112.5%; -webkit-text-size-adjust:112.5%; -ms-text-size-adjust:112.5%} /* move base size from 16px to 18px */
   footer p+p {margin-top:0}
   time {display:inline}
+  body {padding:2em}
 }
 
 /* Tablet landscape */
