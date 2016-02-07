@@ -19,6 +19,7 @@ a:focus {outline:thin dotted}
 a:hover, a:active {outline:0}
 
 abbr[title] {border-bottom:1px dotted}
+address {display:inline; font-style:normal}
 b, strong {font-weight:600}
 blockquote {margin:1em 40px}
 dfn {font-style:italic}
@@ -46,8 +47,6 @@ figure {margin:0}
 
 table {border-collapse:collapse; border-spacing:0}
 td {vertical-align:top}
-
-.chromeframe {margin:0.2em 0; background:#ccc; color:black; padding:0.2em 0}
 
 /* =============================================================================
    Primary styles
@@ -118,7 +117,7 @@ p {margin:0}
 article p {margin-bottom:1em}
 
 footer {padding-bottom:1em}
-footer hr {border-bottom:1px solid #222; display:block; height:0; margin:2em auto; width:6em;}
+article hr, footer hr {border-bottom:1px solid #222; display:block; height:0; margin:2em auto; width:6em;}
 footer p+p {margin-top:.375em}
 footer nav {text-align:center; margin-top:1.5em}
 
@@ -128,8 +127,20 @@ footer nav {text-align:center; margin-top:1.5em}
 
 ul li {list-style:none; position:relative;}
 ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
-.stacked-list li:before {content:''}
+.social-icons li:before, .stacked-list li:before {content:''}
 .stacked-list a {font-size: 1.2em; line-height: 1.8}
+
+.text-wrapper {margin-bottom:1em}
+
+.avatar-wrapper {border-radius: 50%; border: 1px solid #222; height: 15em; margin: 1em auto; overflow: hidden; padding: 2px; width: 15em;}
+.avatar-wrapper img {width:100%}
+
+.social-icons {line-height:1; max-width:12em; margin:0 auto; text-align:center}
+.social-icon {padding:.5em}
+.icon-wrapper, .social-icon {display:inline-block}
+.icon-wrapper {width:1.5em}
+.icon-wrapper svg {fill:#222; transition: fill 0.3s ease}
+.icon-wrapper:hover svg, .icon-wrapper:focus svg {fill:#F00}
 
 /* =============================================================================
    Media Queries
@@ -148,6 +159,8 @@ ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
   footer p+p {margin-top:0}
   time {display:inline}
   body {padding:2em}
+  .social-icons {max-width:40em}
+  .icon-wrapper {width:2em}
 }
 
 /* Tablet landscape */
