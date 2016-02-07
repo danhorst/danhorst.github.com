@@ -6,7 +6,7 @@ formatting: article
   <nav>
     <a href="/articles">Articles</a>
     <a href="/notes">Notes</a>
-    <a href="http://dan.brubakerhorst.com">About</a>
+    <a href="/about">About</a>
   </nav>
 </header>
 
@@ -15,7 +15,7 @@ formatting: article
     <h1 itemprop="title" class="instapaper_ignore">{{ page.title }}</h1>
     <p class="subtle">
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <a itemprop="url" href="http://dan.brubakerhorst.com/about/"><span itemprop="name">Dan Brubaker Horst</span></a>
+      <a itemprop="url" href="/about/"><span itemprop="name">Dan Brubaker Horst</span></a>
     </span> &mdash;
     {% if page.revised %}
     <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateCreated">{{ page.date | date:"%B %e, %Y" }}</time>,  last updated <time datetime="{{ page.date | date:"%Y-%m-%d %H:%M" }}" itemprop="dateRevised">{{ page.revised | date:"%B %e, %Y" }}</time>
