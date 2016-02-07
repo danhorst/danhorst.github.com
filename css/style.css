@@ -121,7 +121,6 @@ article hr, footer hr {border-bottom:1px solid #222; display:block; height:0; ma
 footer p+p {margin-top:.375em}
 footer nav {text-align:center; margin-top:1.5em}
 
-.index-page #container {min-height:22em}
 .index-page footer nav {margin-top:0}
 .home #container h3 {margin-top:2em}
 
@@ -165,7 +164,6 @@ ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2px so
 
 /* Tablet landscape */
 @media only screen and (min-width:48.5em) { /* > 768 */
-  .index-page #container {min-height:20em}
 }
 
 /* Large Screen */
