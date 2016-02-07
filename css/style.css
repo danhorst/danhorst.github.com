@@ -131,8 +131,8 @@ ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2px so
 
 .text-wrapper {margin-bottom:1em}
 
-.avatar-wrapper {border-radius: 50%; border: 1px solid #222; height: 15em; margin: 1em auto; overflow: hidden; padding: 2px; width: 15em;}
-.avatar-wrapper img {width:100%}
+.avatar-wrapper {border-radius:50%; border:1px solid #222; height:15em; margin:1em auto; overflow:hidden; padding:2px; width:15em;}
+.avatar-wrapper img {border-radius:50%; width:100%}
 
 .social-icons {line-height:1; max-width:12em; margin:0 auto; text-align:center}
 .social-icon {padding:.5em}
