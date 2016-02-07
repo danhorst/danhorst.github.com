@@ -126,8 +126,8 @@ footer nav {text-align:center; margin-top:1.5em}
 .home #container h3 {margin-top:2em}
 
 ul li {list-style:none; position:relative;}
-ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
-.social-icons li:before, .stacked-list li:before {content:''}
+ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2px solid #222}
+.social-icons li:before, .stacked-list li:before {border:0}
 .stacked-list a {font-size: 1.2em; line-height: 1.8}
 
 .text-wrapper {margin-bottom:1em}
