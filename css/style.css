@@ -54,15 +54,11 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
-#banner {background-color:#222; padding:.5em 0}
-#banner a {display:inline-block; margin-right:1em; text-decoration:none;
-  -webkit-transition: color 0.3s ease;
-     -moz-transition: color 0.3s ease;
-       -o-transition: color 0.3s ease;
-          transition: color 0.3s ease}
-#banner a,
-#banner a:visited {color:#FFF}
-#banner a:hover {color:#F00}
+#banner {padding:.5em 0}
+nav a {display:inline-block; margin-right:1em; text-decoration:none; transition: color 0.3s ease}
+nav a,
+nav a:visited {color:#222}
+nav a:hover {color:#F00}
 
 #content {min-width:10em}
 #container {padding:1em 1.5em}
@@ -83,7 +79,6 @@ h2 a:hover,
 .listing a:visited,
 h2 a:visited {color:#222}
 
-time, header p {color:#888}
 time {display:block}
 header p time {display:inline}
 
@@ -97,7 +92,7 @@ p {margin:0}
 article p {text-indent:0}
 article p+p {text-indent:1em}
 
-footer {background-color:#222; color:#FFF; padding:1em 0}
+footer {padding:1em 0}
 footer section {padding:0 1.5em}
 footer p+p {margin-top:.375em}
 footer nav {text-align:center; margin-top:1em}
