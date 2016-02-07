@@ -7,7 +7,7 @@ audio, canvas, video {display:inline-block; *display:inline; *zoom:1}
 audio:not([controls]) {display:none}
 [hidden] {display:none}
 
-html {font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:1.5}
+html {font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:1.6}
 html, button, input, select, textarea {font-family:Vollkorn,Georgia,Times,serif; color:#222}
 body {margin:0}
 
@@ -54,23 +54,23 @@ td {vertical-align:top}
    Primary styles
    Author: Dan Brubaker Horst
    ========================================================================== */
-#banner {padding:.5em 0}
+body {padding:.5em}
+
 nav a {display:inline-block; margin-right:1em; text-decoration:none; transition: color 0.3s ease}
 nav a,
 nav a:visited {color:#222}
 nav a:hover {color:#F00}
 
 #content {min-width:10em}
-#container {padding:1em 1.5em}
-#container, footer section {margin:0 auto; max-width:52em}
-#banner nav {margin:0 auto; max-width:52em; padding:0 1.5em}
+#banner nav, #container, footer section {margin:0 auto; max-width:36em}
+#banner nav {padding-bottom:1em}
 
 h1,
 h2,
-h3 {font-weight:normal; margin:.375em 0 line-height:1.333}
-h1 {font-size:1.625em; margin-top:0}         /* 26px */
-h2 {font-size:1.25em}                        /* 20px */
-h3 {font-size:1em; text-transform:uppercase} /* 16px */
+h3 {font-weight:normal; margin:.375em 0}
+h1 {font-size:1.5em; margin-top:0}    /* 24px */
+h2 {font-size:1em; font-style:bold}   /* 16px */
+h3 {font-size:1em; font-style:italic} /* 16px */
 
 .listing a,
 h2 a,
@@ -89,8 +89,7 @@ header h1 {margin-bottom:0}
 hgroup h2 {font-size:1.125em; font-style:italic; margin-top:0}
 
 p {margin:0}
-article p {text-indent:0}
-article p+p {text-indent:1em}
+article p {margin-bottom:1em}
 
 footer {padding:1em 0}
 footer section {padding:0 1.5em}
@@ -113,44 +112,23 @@ ul li:before {content:"\2022"; position:absolute; top:0; left:-.8em}
 
 /* Phone landscape */
 @media only screen and (min-width:20.5em) { /* > 320 */
-  #banner nav {padding:0 3em}
-  #container {padding:2em 3em}
-  footer {padding:2em 0}
-  footer section {padding:0 3em}
-  footer nav {margin-top:2em}
 }
 
 /* Tablet portrait */
 @media only screen and (min-width:30.5em) { /* > 480 */
   html {font-size:112.5%; -webkit-text-size-adjust:112.5%; -ms-text-size-adjust:112.5%} /* move base size from 16px to 18px */
-  h1 {font-size:1.5556em}        /* 28px */
-  h2 {font-size:1.2222em}        /* 22px */
-  hgroup h2 {font-size:1.2222em} /* 22px */
-  #container {padding:2em 3em}
-  #banner nav {padding:0 3em}
-  footer {padding:4em 0}
-  footer section {padding:0 3em}
-  footer nav {margin-top:2em}
   footer p+p {margin-top:0}
   time {display:inline}
 }
 
 /* Tablet landscape */
 @media only screen and (min-width:48.5em) { /* > 768 */
-  #container, footer section {max-width:40em}
-  #container {padding:4em 6em}
-  #banner nav {padding:0 108px; padding:0 6em}
-  footer nav {margin-top:4em}
-  #banner nav {max-width:40em}
   .index-page #container {min-height:20em}
 }
 
 /* Large Screen */
 @media only screen and (min-width:64.5em) { /* > 1024 */
-  html {font-size:137.5%; -webkit-text-size-adjust:137.5%; -ms-text-size-adjust:137.5%} /* move base size from 16px to 22px */
-  h1 {font-size:2.25em}          /* 36px */
-  h2 {font-size:1.1818em}        /* 26px */
-  hgroup h2 {font-size:1.1818em} /* 26px */
+  html {font-size:125%; -webkit-text-size-adjust:125%; -ms-text-size-adjust:125%} /* move base size from 16px to 20px */
 }
 
 /* =============================================================================
