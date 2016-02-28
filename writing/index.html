@@ -3,17 +3,20 @@ layout:   page
 category: article
 title:    Writing &mdash; Dan Brubaker Horst
 ---
-<h1>Articles</h1>
+<h1>Writing</h1>
 
 <ul class="articles listing">
 {% for post in site.posts %}
-  <li itemscope itemtype="http://schema.org/BlogPosting">
-    <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
-  {% if post.revised %}
-    <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
-  {% else %}
-    <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-  {% endif %}
+  <li itemscope itemtype="http://schema.org/BlogPosting" class="post-listing">
+    <a itemprop="url" href="{{ post.url }}">
+      <span itemprop="name" class="title">{{ post.title }}</span>
+      <span class="category">{{ post.category }}</span>
+    {% if post.revised %}
+      <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
+    {% else %}
+      <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    {% endif %}
+    </a>
   </li>
 {% endfor %}
 </ul>

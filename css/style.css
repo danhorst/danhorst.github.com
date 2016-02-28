@@ -80,7 +80,7 @@ td {vertical-align:top}
 
 html {color:#222; font-family:vollkornregular,Georgia,Times,serif; padding-bottom:2em}
 em, i {font-family:vollkornitalic}
-h1, h2, h3, nav a {font-family:montserratregular,Helvetica,Arial,sans-serif}
+h1, h2, h3, nav a, .post-listing .category {font-family:montserratregular,Helvetica,Arial,sans-serif}
 pre, code, kbd, samp {font-family: 'firamonoregular', monospace, serif; font-size:1em}
 
 body {padding:1em}
@@ -137,6 +137,12 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 .stacked-list a {font-size: 1.2em; line-height: 1.8}
 .inline-list {list-style-type:none; margin:0}
 .inline-list li {display:inline-block}
+
+.post-listing {margin-bottom: .5em; position:relative}
+.post-listing a {text-decoration:none}
+.post-listing time {position:absolute; right:0; top:0}
+.post-listing .title {display:block; padding-right: 8em;}
+.post-listing .category {display:block; text-transform:uppercase; font-size:.6em; letter-spacing:.1em}
 
 .text-wrapper {margin-bottom:1em}
 
