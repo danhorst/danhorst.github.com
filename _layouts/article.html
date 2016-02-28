@@ -12,8 +12,8 @@ formatting: article
 
 <section id="container" role="main" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="title" class="instapaper_ignore">{{ page.title }}</h1>
-    <p class="subtle">
+    <h1 itemprop="title" class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
       <a itemprop="url" href="/about/"><span itemprop="name">Dan Brubaker Horst</span></a>
     </span> &mdash;
@@ -24,7 +24,7 @@ formatting: article
     {% endif %}
     </p>
   </header>
-  <article itemprop="articleBody" class="instapaper_body">
+  <article itemprop="articleBody" class="post-body">
     {{ content }}
   </article>
 </section>

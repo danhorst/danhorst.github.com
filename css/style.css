@@ -139,10 +139,14 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 .inline-list li {display:inline-block}
 
 .post-listing {margin-bottom: .5em; position:relative}
-.post-listing a {text-decoration:none}
+.post-listing a {text-decoration:none; transition: color 0.3s ease}
+.post-listing a:hover {color:#F00}
 .post-listing time {position:absolute; right:0; text-align:left; top:0; width:5.5em}
 .post-listing .title {display:block; padding-right:6em}
 .post-listing .category {display:block; text-transform:uppercase; font-size:.6em; letter-spacing:.1em}
+
+.post-title {margin-bottom:.3em}
+.post-meta {margin-bottom:2em}
 
 .text-wrapper {margin-bottom:1em}
 
