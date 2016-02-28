@@ -35,7 +35,7 @@ sup {top:-0.5em}
 sub {bottom:-0.25em}
 
 ul, ol {margin:1em 0; padding:0}
-li > ul, li > ol {padding-left:2em}
+li > ul, li > ol {padding-left:2em; margin-top:0}
 dd {margin:0 0 0 40px}
 nav ul, nav ol {list-style:none; list-style-image:none; margin:0; padding:0}
 
