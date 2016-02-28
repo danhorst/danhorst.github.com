@@ -2,7 +2,7 @@
 filename: 2012-05-10-responsive-design.md
 revised:  2012-05-24
 layout:   article
-category: notes
+category: articles
 title:    Responsive Web Design
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout:   page
 category: article
-title:    Articles &mdash; Dan Brubaker Horst
+title:    Writing &mdash; Dan Brubaker Horst
 ---
 <h1>Articles</h1>
 
 <ul class="articles listing">
-{% for post in site.categories.articles %}
+{% for post in site.posts %}
   <li itemscope itemtype="http://schema.org/BlogPosting">
     <a itemprop="url" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a>
   {% if post.revised %}
