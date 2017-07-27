@@ -10,7 +10,7 @@ title:    Writing &mdash; Dan Brubaker Horst
   <li itemscope itemtype="http://schema.org/BlogPosting" class="post-listing">
     <a itemprop="url" href="{{ post.url }}">
       <span itemprop="name" class="title">{{ post.title }}</span>
-      <span class="category">{{ post.category }}</span>
+      <small class="category">{{ post.category }}</small>
     {% if post.revised %}
       <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
     {% else %}
