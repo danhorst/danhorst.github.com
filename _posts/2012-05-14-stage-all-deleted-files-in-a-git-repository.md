@@ -1,7 +1,8 @@
 ---
 filename: 2012-05-14-stage-all-deleted-files-in-a-git-repository.md
 layout:   article
-category: notes
+category: Notes 
+tags:     [git]
 title:    Stage All Deleted Files In A Git Repository
 ---
 

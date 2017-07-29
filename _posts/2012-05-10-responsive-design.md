@@ -2,7 +2,8 @@
 filename: 2012-05-10-responsive-design.md
 revised:  2016-02-27
 layout:   article
-category: article
+category: Article
+tags:     [web, design, responsive]
 title:    Responsive Web Design
 ---
 
