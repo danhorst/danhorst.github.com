@@ -96,9 +96,8 @@ header p time {display:inline; white-space:nowrap}
 
 section hgroup,
 section header {margin-bottom:1em}
-hgroup h1,
 header h1 {margin-bottom:0}
-hgroup h2 {font-size:1.125em; margin-top:0}
+hgroup h1 {margin-bottom:.1em}
 
 p {margin:0}
 article p {margin-bottom:1em}
@@ -111,6 +110,7 @@ footer nav {text-align:center; margin-top:1.5em}
 
 .index-page footer nav {margin-top:0}
 .home #container h3 {margin-top:2em}
+.home #container {text-align:center}
 
 ul li {list-style:none; position:relative;}
 main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2px solid #222}
