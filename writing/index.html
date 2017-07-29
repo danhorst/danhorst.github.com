@@ -6,7 +6,7 @@ title:    Writing &mdash; Dan Brubaker Horst
 <h1>Writing</h1>
 
 <ul class="articles listing">
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
   <li itemscope itemtype="http://schema.org/BlogPosting" class="post-listing">
     <a itemprop="url" href="{{ post.url }}">
       <span itemprop="name" class="title">{{ post.title }}</span>
