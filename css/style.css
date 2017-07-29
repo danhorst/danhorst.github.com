@@ -68,9 +68,9 @@ body {padding:1em}
 
 h1,
 h2,
-h3 {font-weight:normal; margin:.375em 0}
-h1 {font-size:1.5em; margin-top:0} /* 24px */
-h2 {font-size:1em} /* 16px */
+h3 {font-weight:normal; margin:1.375em 0 .375em}
+h1 {font-size:1.75em; margin-top:0} /* 28px */
+h2 {font-size:1.5em} /* 24px */
 h3, nav a {font-size:.75em; letter-spacing:.1em; text-transform:uppercase} /* 12px */
 h3 {line-height:2}
 
