@@ -122,7 +122,7 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 .post-listing {margin-bottom: .5em; position:relative}
 .post-listing a {text-decoration:none; transition: color 0.3s ease}
 .post-listing a:hover {color:#F00}
-.post-listing time {position:absolute; right:0; text-align:left; top:0; width:5.5em}
+.post-listing time {line-height:2.25; font-size:71.72%; position:absolute; right:0; text-align:left; top:0; width:5.5em}
 .post-listing .title {display:block; padding-right:6em}
 .post-listing .category {display:block; font-weight:bold; font-size:60%; letter-spacing:.1em; text-transform:uppercase}
 
