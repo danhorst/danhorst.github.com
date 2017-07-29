@@ -1,5 +1,5 @@
 highlighter:  false
-permalink: /thoughts/:title/
+permalink: /writing/:title/
 markdown:  kramdown
 url:       http://danhorst.github.io
 ga_token:  UA-28083204-3
