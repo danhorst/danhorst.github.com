@@ -4,26 +4,31 @@ category: meta
 title:    Tags
 ---
 
-<div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.tags %}
-      <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.tags %}
-      <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-      <ul class="tags-expo-posts">
-        {% for post in tag[1] %}
-          <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-            <li>
-              {{ post.title }}
-              <small class="post-date">{{ post.date | date_to_string }}</small>
-            </li>
+<section class="tag-cloud">
+  {% for tag in site.tags %}
+    <a href="#{{ tag[0] | slugify }}" class="tag">{{ tag[0] }}</a>
+  {% endfor %}
+</section>
+
+<hr/>
+
+<section class="tag-listing">
+  {% for tag in site.tags %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <ul class="listing">
+      {% for post in tag[1] %}
+        <li itemscope itemtype="http://schema.org/BlogPosting" class="post-listing">
+          <a itemprop="url" href="{{ post.url }}">
+            <span itemprop="name" class="title">{{ post.title }}</span>
+            <small class="category">{{ post.category }}</small>
+          {% if post.revised %}
+            <time itemprop="dateRevised" datetime="{{ post.revised | date:"%Y-%m-%d" }}">{{ post.revised | date:"%Y-%m-%d" }}</time>
+          {% else %}
+            <time itemprop="dateCreated" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+          {% endif %}
           </a>
-        {% endfor %}
-      </ul>
-    {% endfor %}
-  </div>
-</div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>
