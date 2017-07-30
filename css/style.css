@@ -128,8 +128,7 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 
 .post-title {margin-bottom:.3em}
 .post-meta {margin-bottom:2em; font-size:.75em;} /* 12px */
-.post-meta .tags {padding-left:1em}
-.post-meta .tags:before {content:"\2022"; color:#727272}
+.post-meta .tags:before {content:"\00A0\2022\00A0"; color:#727272}
 
 .text-wrapper {margin-bottom:1em}
 
