@@ -1,4 +1,4 @@
----
+t--
 filename: 2012-05-10-responsive-design.md
 revised:  2016-02-27
 layout:   article
@@ -7,19 +7,24 @@ tags:     [web, design, responsive]
 title:    Responsive Web Design
 ---
 
-In 2010 [Ethan Marcotte][1] coined the term _[responseive web design][2]_ to describe a process for creating flexible, versatile websites. By using [media queries][3] in conjunction with a fluid grid a designer can alter the flow of content within a website to provide a good viewing experience on [a phone-sized screen as well as a 70"; display][4]. Philosophically it embraces the idea
-that when designing for the web [we should “accept the ebb and flow of things”][5].
+In 2010 [Ethan Marcotte][1] coined the term _[responseive web design][2]_ to describe a process for creating flexible, versatile websites.
+By using [media queries][3] in conjunction with a fluid grid a designer can alter the flow of content within a website to provide a good viewing experience on [a phone-sized screen as well as a 70"; display][4].
+Philosophically it embraces the idea that when designing for the web [we should “accept the ebb and flow of things”][5].
 
-## Getting Started
+## Orientation
 
 A good place to start is [the original article][6].
 
-Articles on [A List Apart][7] and [other][8] [blogs][9] are great for an introduction to a technique or idea but concepts that require a degree of nuance are hard to learn from a blog post or two. Books dedicated to a subject give you enough information to build a conceptual framework. [A Book Apart][10] publishes small volumes on different aspects on creating for the web. I have read several of their books. They are all good.
+Articles on [A List Apart][7] and [other][8] [blogs][9] are great for an introduction to a technique or idea but concepts that require a degree of nuance are hard to learn from a blog post or two.
+Books dedicated to a subject give you enough information to build a conceptual framework.
+[A Book Apart][10] publishes small volumes on different aspects on creating for the web.
+I have read several of their books.
+They are all good.
 
  - _[Responsive Web Design][11]_ by [the man himself][1] is a good introduction into this methodology.
- - _[Mobile First][12]_ by [Luke Wroblewski][13] suggests that we should start by designing sites for mobile screens. Larger viewports should be treated as a progressive enhancement to the mobile design.
+ - _[Mobile First][12]_ by [Luke Wroblewski][13] makes the case for starting with small screens and using progressive enhancement to accommodate larger viewports.
 
-## Follow What’s Going On
+## Resources
 
  - [mediaqueri.es][14] is a gallery of responsive sites that illustrate how different approaches to presenting content at varying screen widths.
  - [@RWD][15] has frequent updates to all things related to responsive web design.
