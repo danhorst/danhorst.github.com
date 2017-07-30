@@ -18,7 +18,7 @@ a:hover, a:visited {color:#F00}
 a:focus {outline:thin dotted}
 a:hover, a:active {outline:0}
 
-abbr {text-decoration:none}
+abbr[title] {text-decoration:none}
 address {display:inline; font-style:normal}
 b, strong {font-weight:600}
 blockquote {margin:1em 40px}
