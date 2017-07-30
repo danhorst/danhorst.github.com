@@ -127,8 +127,9 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 .post-listing .category {display:block; font-weight:bold; font-size:60%; letter-spacing:.1em; text-transform:uppercase}
 
 .post-title {margin-bottom:.3em}
-.post-meta {margin-bottom:2em}
-.post-meta .tags {display:block}
+.post-meta {margin-bottom:2em; font-size:.75em;} /* 12px */
+.post-meta .tags {padding-left:1em}
+.post-meta .tags:before {content:"\2022"; color:#727272}
 
 .text-wrapper {margin-bottom:1em}
 
@@ -172,6 +173,7 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
   html {font-size:137.5%; -webkit-text-size-adjust:137.5%; -ms-text-size-adjust:137.5%} /* move base size from 16px to 22px */
   h1 {font-size:2.18182em; line-height:1.2} /* 48px */
   h2 {font-size:1.6364em} /* 36px */
+  .post-meta {font-size:.7272em;} /* 16px */
 }
 
 /* =============================================================================
