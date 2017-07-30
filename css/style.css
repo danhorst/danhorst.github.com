@@ -128,6 +128,7 @@ main ul li:before {content:''; position:absolute; top:.7em; left:-.6em; border:2
 
 .post-title {margin-bottom:.3em}
 .post-meta {margin-bottom:2em}
+.post-meta .tags {display:block}
 
 .text-wrapper {margin-bottom:1em}
 
